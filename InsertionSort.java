@@ -1,4 +1,4 @@
-public class InsertionSort implements Sort{
+public class InsertionSort<T extends Comparable<T>> implements Sort<T>{
 
     @Override
     public T[] sort(T[] values) {
