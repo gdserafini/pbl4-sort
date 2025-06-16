@@ -1,4 +1,4 @@
-public class BubbleSort implements Sort {
+public class BubbleSort<T extends Comparable<T>> implements Sort<T> {
 
     @Override
     public T[] sort(T[] values){
