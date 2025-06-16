@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.function.Predicate;
 
-public class QuickSort implements Sort{
+public class QuickSort<T extends Comparable<T>> implements Sort<T>{
 
     @Override
     public T[] sort(T[] values){
