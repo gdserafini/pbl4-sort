@@ -1,5 +1,3 @@
-import sort.*;
-import reader.CsvReader;
 import java.util.*;
 
 public class Main {
@@ -27,7 +25,7 @@ public class Main {
                     Sort<Integer> algorithm = algorithms[i];
                     String name = algorithmsNames[i];
 
-                    Integer[] data = dadosOriginais.toArray(new Integer[0]);
+                    Integer[] data = originalData.toArray(new Integer[0]);
 
                     long start = System.nanoTime();
                     algorithm.sort(data);
