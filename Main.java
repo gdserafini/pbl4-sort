@@ -42,7 +42,10 @@ public class Main {
                     Integer[] data = originalData.toArray(new Integer[0]);
 
                     long start = System.nanoTime();
-                    algorithm.sort(data);
+                    var sorted = algorithm.sort(data);
+                    for(int j = 0; j < 10; j++){
+                        System.out.print(sorted[j] + " ");
+                    }
                     long end = System.nanoTime();
 
                     long time = (end - start) / 1_000_000;
